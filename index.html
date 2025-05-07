@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fas fa-thumbtack"></i> Pinterest Clone</div>
+        <input type="text" placeholder="Search for inspiration...">
+        <div class="profile-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <!-- Images -->
+        <div class="pin"><img src="cartoon-lifestyle-summertime-scene.jpg" alt="Cartoon lifestyle scene"></div>
+        <div class="pin"><img src="anime-moon-landscape.jpg" alt="Anime moon landscape"></div>
+        <div class="pin"><img src="bright-pop-landscape-design.jpg" alt="Bright pop landscape"></div>
+        <div class="pin"><img src="https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Japanese-Wallpaper-Anime.jpg" alt="Aesthetic Japanese Wallpaper"></div>
+        <div class="pin"><img src="https://i.etsystatic.com/46144721/r/il/d0280f/5260260201/il_fullxfull.5260260201_mtkf.jpg" alt="Anime Etsy Art"></div>
+        <div class="pin"><img src="https://wallpapercave.com/wp/wp11741479.jpg" alt="Scenic Anime Wallpaper"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Pinterest Clone | Created by You</p>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script>
+        const topButton = document.getElementById("backToTop");
+        window.onscroll = function () {
+            topButton.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        topButton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
